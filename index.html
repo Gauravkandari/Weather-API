@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this a project of weather API Fetched">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="Images/icon.png">
+  <title>Weather Info</title>
+</head>
+  
+<body>
+  <div class="card">
+    <div class="search">
+      <form class="flex">
+        <input type="text" placeholder="Enter City Name" class="input-city" spellcheck="false" autofocus>
+        <button class="btn" aria-label="search button" ><img src="Images/search.png" alt="search"></button>
+      </form>
+    </div>
+
+    <div class="err">
+      <p>Please enter correct city name</p>
+    </div>
+    <div class="weather-detail">
+      <div class="buffering">
+        <img src="Images/buffering.gif" alt="buffering">
+      </div>
+      <img src="Images/rain.png" class="weather-icon" alt="rain">
+      <h1 class="temp">-- °C</h1>
+      <h2 class="city">------</h2>
+
+      <div class="loc">
+        <img src="Images/latitude.png" alt="latitude">
+        <div class="latlon">
+          <p class="lat">Latitude : --.----° -----</p>
+          <p class="lon">Longitude : --.----° ----</p>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="col">
+          <img src="Images/humidity.png" alt="humidity">
+          <div>
+            <p class="humidity">-- %</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="Images/wind.png" alt="wind">
+          <div>
+            <p class="wind">-- km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
